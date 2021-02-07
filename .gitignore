@@ -1,0 +1,3 @@
+# exclude any config files and .csv files
+*.csv
+config.py
