@@ -27,7 +27,7 @@
     </div>
     <div class="container">
       <div class="row margin-top-50">
-        <div class="col-md-2">
+        <div class="col-md-3">
           <aside class="filters">
             <div class="panel panel-default">
               <div class="panel-heading">Filter Search</div>
@@ -36,11 +36,15 @@
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Country</label>
+                        <label for="sightingDate">Enter a date: MM/DD/YYYY</label>
+                        <input class="form-control" id="sightingDate" type="date" value="">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="sightingCountry">Enter a Country</label>
                         <input class="form-control" id="sightingCountry" type="text" value="">
                       </li>
                       <li class="filter list-group-item">
-                        <label for="date">Enter a State</label>
+                        <label for="sightingState">Enter a State</label>
                         <input class="form-control" id="sightingState" type="text" value="">
                       </li>
                       <li class="filter list-group-item">
@@ -56,24 +60,24 @@
             </div>
           </aside>
         </div>
-        <div class="col-md-10">
-          <div id="sighting-count" class="panel panel-default">
-            <div class="panel-heading">Total Sightings</div>
+        <div class="col-md-9">
+          <div id="sighting-count-panel" class="panel panel-default">
+            <div id="sighting-count" class="panel-heading">Total Sightings</div>
           </div>
           <div id="table-area" class="">
             <table id="ufo-table" class="table table-striped">
               <thead>
                 <tr>
                   <th class="table-head">Date</th>
-                  <th class="table-head">City</th>
-                  <th class="table-head">State</th>
-                  <th class="table-head">Country</th>
-                  <th class="table-head">Shape</th>
-                  <th class="table-head">Duration</th>
-                  <th class="table-head">Duration (hr/min)</th>
-                  <th class="table-head">Comments</th>
-                  <th class="table-head">Latitude</th>
-                  <th class="table-head">Longitude</th>
+                  <th class="table-head" style="text-align: left">City</th>
+                  <th class="table-head" style="text-align: left">State</th>
+                  <th class="table-head" style="text-align: left">Country</th>
+                  <th class="table-head" style="text-align: left">Shape</th>
+                  <th class="table-head" style="text-align: left">Duration </th>
+                  <th class="table-head" style="text-align: left">Duration (hr/min)</th>
+                  <th class="table-head" style="text-align: left">Comments</th>
+                  <th class="table-head" style="text-align: left">Latitude</th>
+                  <th class="table-head"style="text-align: left">Longitude</th>
                 </tr>
               </thead>
               <tbody></tbody>
