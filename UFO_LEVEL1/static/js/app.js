@@ -18,6 +18,8 @@ function generateTable(table, data) {
   }
 
 function clearFilters() {
+
+  d3.event.preventDefault();
   document.getElementById("sightingCountry").value ='';
   document.getElementById("sightingState").value ='';
   document.getElementById("ufoShape").value ='';
